@@ -9,6 +9,7 @@ gulp.task('scripts', function() {
 "engine/spritesheet.js",
 "engine/touch.js",
 "engine/teclado.js",
+"engine/button.js",
 
 "game/fundo.js",
 "game/milleniumFalcon.js",

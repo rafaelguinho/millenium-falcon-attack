@@ -29,7 +29,8 @@ function carregarImagens() {
         tieFighter: 'tie.png',
         imgAsteroid: 'asteroid.png',
         imgExplosao: 'explosao.png',
-        imgVida: 'nave-vida.png'
+        imgVida: 'nave-vida.png',
+        imgButtonStart: 'start.png'
     };
 
     // Carregar todas
@@ -61,25 +62,17 @@ function carregando() {
 
     context.restore();
     if (carregadas == totalImagens) {
-        iniciarObjetos();
-        iniciarJogo();
+
+        var x = (canvas.width / 2 - 60), y= (canvas.height / 2 - 24);
+
+        var button = new Button(canvas, imagens.imgButtonStart, x, y, configureAndStartGame);
+        button.draw();
     }
 }
 
-function iniciarJogo() {
-
-    isGameOver = false;
-
-    criacaoInimigos.ultimoCriado = new Date().getTime();
-    painel.pontuacao = 0;
-
-    musicaAcao.play();
-    animacao.ligar();
-
-    ativarTiro(true);
-    // Pausa
-    teclado.disparou(ENTER, doPauseOrUnPause);
-    
+function configureAndStartGame() {
+    iniciarObjetos();
+    iniciarJogo();
 }
 
 function iniciarObjetos() {
@@ -91,7 +84,7 @@ function iniciarObjetos() {
     colisor = new Colisor();
 
     espaco = new Fundo(context, imagens.espaco);
-    
+
     milleniumFalcon = new MilleniumFalcon(context, teclado, imagens.milleniumFalcon, imagens.imgExplosao, touch);
 
     painel = new Painel(context, milleniumFalcon, imagens.imgVida);
@@ -108,6 +101,22 @@ function iniciarObjetos() {
     animacao.novoSprite(painel);
 
     configuracoesIniciais();
+}
+
+function iniciarJogo() {
+
+    isGameOver = false;
+
+    criacaoInimigos.ultimoCriado = new Date().getTime();
+    painel.pontuacao = 0;
+
+    musicaAcao.play();
+    animacao.ligar();
+
+    ativarTiro(true);
+    // Pausa
+    teclado.disparou(ENTER, doPauseOrUnPause);
+
 }
 
 function obterPontucaoMaxima() {
@@ -206,7 +215,7 @@ function doPauseOrUnPause() {
 
 function unPause() {
 
-    if(isGameOver){
+    if (isGameOver) {
         iniciarJogo();
         return;
     }
@@ -219,7 +228,7 @@ function unPause() {
 
 function pause() {
 
-    if(isGameOver) return;
+    if (isGameOver) return;
 
     animacao.desligar();
     ativarTiro(false);
