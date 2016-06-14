@@ -12,7 +12,7 @@ function Touch(elemento, context, startCallBack, endCallBack) {
 
     var touchStart = function (e) {
 
-        if(startCallBack) startCallBack();
+        
 
         var posicao = converterParaCanvas(
             e.changedTouches[0].pageX - touch.canvas.offsetLeft,
@@ -27,7 +27,11 @@ function Touch(elemento, context, startCallBack, endCallBack) {
 
         // Pitágoras
         if (distanciaX ^ 2 + distanciaY ^ 2 <= touch.raio ^ 2) {
+
+            if(startCallBack) startCallBack();
+            
             touch.arrastando = true;
+            
             touch.touchCount ++;
             touch.x = xToque;
             touch.y = yToque;

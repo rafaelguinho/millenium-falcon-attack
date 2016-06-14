@@ -14,8 +14,10 @@ function Button(elemento, imgButton, x, y, callBack) {
             width: touch.imgButton.width, 
             height: touch.imgButton.height };
 
-        if (collides(rect, e.changedTouches[0].pageX,
-            e.changedTouches[0].pageY)) callBack();
+        if (collides(rect, e.changedTouches[0].pageX, e.changedTouches[0].pageY)){
+                elemento.removeEventListener('touchstart', touchStart);
+                callBack();
+            } 
 
     }
 

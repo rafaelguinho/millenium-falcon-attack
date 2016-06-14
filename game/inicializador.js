@@ -30,7 +30,7 @@ function carregarImagens() {
         imgAsteroid: 'asteroid.png',
         imgExplosao: 'explosao.png',
         imgVida: 'nave-vida.png',
-        imgButtonStart: 'start.png'
+        imgButtonStart: 'start.svg'
     };
 
     // Carregar todas
@@ -50,20 +50,10 @@ function carregando() {
 
     context.drawImage(imagens.espaco, 0, 0, canvas.width, canvas.height);
 
-    context.fillStyle = 'yellow';
-    context.font = '15px sans-serif';
-    context.fillText("Carregando...", 20, 20);
-
     carregadas++;
-    var tamanhoTotal = 50;
-    var tamanho = carregadas / totalImagens * tamanhoTotal;
-    context.fillStyle = 'yellow';
-    context.fillRect(20, 20, tamanho, 50);
-
-    context.restore();
     if (carregadas == totalImagens) {
 
-        var x = (canvas.width / 2 - 60), y= (canvas.height / 2 - 24);
+        var x = (canvas.width / 2 - 100), y= (canvas.height / 2 - 60);
 
         var button = new Button(canvas, imagens.imgButtonStart, x, y, configureAndStartGame);
         button.draw();
