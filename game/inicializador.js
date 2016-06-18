@@ -39,7 +39,9 @@ function carregarImagens() {
         imgAsteroid: 'asteroid.png',
         imgExplosao: 'explosao.png',
         imgVida: 'nave-vida.png',
-        imgButtonStart: 'start.svg'
+        imgButtonStart: 'start.svg',
+        imgButtonCredits: 'credits.svg',
+        logo: 'logo.svg',
     };
 
     // Carregar todas
@@ -62,16 +64,26 @@ function carregando() {
     carregadas++;
     if (carregadas == totalImagens) {
 
-        var x = (canvas.width / 2 - 100), y= (canvas.height / 2 - 60);
+        var x = (canvas.width / 2 - 65), y= (canvas.height / 2 - 100);
+        new Button(canvas, imagens.imgButtonStart, x, y, configureAndStartGame).draw();
 
-        var button = new Button(canvas, imagens.imgButtonStart, x, y, configureAndStartGame);
-        button.draw();
+        y+=140;
+        new Button(canvas, imagens.imgButtonCredits, x, y, showCredits).draw();
+
+        x = (canvas.width / 2 - 80);
+        y= 40;
+        context.drawImage(imagens.logo, x, y, imagens.logo.width, imagens.logo.height);
+        
     }
 }
 
 function configureAndStartGame() {
     iniciarObjetos();
     iniciarJogo();
+}
+
+function showCredits(){
+    
 }
 
 function iniciarObjetos() {

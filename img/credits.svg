@@ -26,13 +26,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.5290672"
-     inkscape:cx="93.24218"
+     inkscape:cx="63.089128"
      inkscape:cy="28.468919"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="705"
+     inkscape:window-height="706"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -55,30 +55,57 @@
      id="layer1"
      transform="translate(0,-997.36216)">
     <rect
-       style="fill:#ffff00;stroke:none"
+       style="fill:#000000;stroke:none"
        id="rect3389"
-       width="122.55563"
-       height="46.925823"
-       x="3.8786805"
-       y="1001.3692" />
+       width="121.33949"
+       height="45.071659"
+       x="4.4851985"
+       y="1002.2975" />
     <path
-       style="fill:#000000;stroke:#ffffff"
-       d="m 5.029336,997.36216 0,2.46461 -2.679782,0 0,2.61413 -2.349554,0 0,44.3427 2.349554,0 0,3.114 2.679782,0 0,2.4646 120.255504,0 0,-2.4646 2.35063,0 0,-3.114 2.36453,0 0,-44.3427 -2.36453,0 0,-2.61413 -2.35063,0 0,-2.46461 z m 2.680313,5.09384 114.565731,0 0,2.9578 2.83766,0 0,38.8967 -2.83766,0 0,2.9579 -114.565731,0 0,-2.9579 -2.822676,0 0,-38.8967 2.822676,0 z"
+       style="fill:#ffff00;stroke:none;stroke-width:1.36523783;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 5.6244359,998.44876 0,2.36724 -2.65319,0 0,2.5108 -2.32623895,0 0,42.5906 2.32623895,0 0,2.991 2.65319,0 0,2.3672 119.0621841,0 0,-2.3672 2.32731,0 0,-2.991 2.34106,0 0,-42.5906 -2.34106,0 0,-2.5108 -2.32731,0 0,-2.36724 z m 2.6537158,4.89254 113.4288783,0 0,2.841 2.8095,0 0,37.3597 -2.8095,0 0,2.8411 -113.4288783,0 0,-2.8411 -2.7946661,0 0,-37.3597 2.7946661,0 z"
        id="rect3349"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccccccccccccccccccccccccccc" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:29.24073792px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="10.147472"
-       y="1024.5223"
-       id="text4146"
-       sodipodi:linespacing="125%"
-       transform="scale(0.99091411,1.0091692)"><tspan
-         sodipodi:role="line"
-         id="tspan4148"
-         x="10.147472"
-         y="1024.5223"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:ArcadeClassic;-inkscape-font-specification:ArcadeClassic">CREDITS</tspan></text>
+    <g
+       transform="matrix(0.99958334,0,0,0.95135266,0.64500695,40.495033)"
+       style="font-style:normal;font-weight:normal;font-size:24.74599648px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="text4146">
+      <path
+         d="m 11.826405,1039.9347 0,-12.8684 q 0.03625,-0.2175 0.217495,-0.2175 l 2.404518,0 0,-2.4045 q 0.02417,-0.2054 0.205411,-0.2054 l 7.63646,0 q 0.217494,0.036 0.217494,0.2054 l 0,2.4045 2.404518,0 q 0.217494,0.036 0.205411,0.2175 l 0,2.4046 q 0,0.2175 -0.205411,0.2054 l -2.404518,0 q -0.217494,0 -0.217494,-0.2054 l 0,-2.4046 -7.63646,0 0,12.8684 7.63646,0 0,-2.4045 q 0.03625,-0.2175 0.217494,-0.2175 l 2.404518,0 q 0.217494,0.036 0.205411,0.2175 l 0,2.4045 q 0,0.2175 -0.205411,0.2055 l -2.404518,0 0,2.4045 q 0,0.2175 -0.217494,0.2175 l -7.63646,0 q -0.217494,0 -0.205411,-0.2175 l 0,-2.4045 -2.404518,0 q -0.217495,0 -0.217495,-0.2055 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LCD Solid';-inkscape-font-specification:'LCD Solid';fill:#ffffff"
+         id="path4138"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 26.942246,1042.5326 0,-18.0883 q 0.02417,-0.2054 0.205412,-0.2054 l 10.234306,0 q 0.229577,0.036 0.24166,0.2054 l 0,2.4045 2.380352,0 q 0.217494,0.036 0.217494,0.2175 l 0,5.0024 q 0,0.2296 -0.217494,0.2296 l -2.380352,0 0,2.3803 q 0,0.2296 -0.24166,0.2296 l -2.380353,0 0,2.3924 2.380353,0 q 0.229577,0.036 0.24166,0.2055 l 0,2.4045 2.380352,0 q 0.217494,0.036 0.217494,0.2175 l 0,2.4045 q 0,0.2175 -0.217494,0.2054 l -2.380352,0 q -0.229577,0 -0.24166,-0.2054 l 0,-2.4045 -2.380353,0 q -0.229577,0 -0.229577,-0.2175 l 0,-2.4045 -2.392435,0 q -0.217494,0 -0.205411,-0.2055 l 0,-2.3924 -2.404518,0 0,7.6244 q 0,0.2175 -0.217494,0.2054 l -2.404518,0 q -0.217495,0 -0.205412,-0.2054 z m 2.827424,-10.4639 7.612294,0 0,-5.0024 -7.612294,0 0,5.0024 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LCD Solid';-inkscape-font-specification:'LCD Solid';fill:#ffffff"
+         id="path4140"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 42.082253,1042.5084 0,-18.1003 q 0.03625,-0.2054 0.217494,-0.2054 l 12.868402,0 q 0.217494,0.036 0.205411,0.2054 l 0,2.4045 q 0,0.2175 -0.205411,0.2175 l -10.258472,0 0,5.0144 7.63646,0 q 0.217494,0.036 0.217494,0.2175 l 0,2.4046 q 0,0.2174 -0.217494,0.2054 l -7.63646,0 0,5.0265 10.258472,0 q 0.217494,0.036 0.205411,0.2054 l 0,2.4045 q 0,0.2175 -0.205411,0.2175 l -12.868402,0 q -0.217494,0 -0.217494,-0.2175 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LCD Solid';-inkscape-font-specification:'LCD Solid';fill:#ffffff"
+         id="path4142"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 57.234345,1042.5326 0,-18.0883 q 0.02417,-0.2054 0.205411,-0.2054 l 7.624377,0 q 0.229577,0.036 0.229577,0.2054 l 0,2.4045 2.380353,0 q 0.229577,0.036 0.229577,0.2175 l 0,2.4046 2.392435,0 q 0.217494,0.036 0.205411,0.2054 l 0,7.6243 q 0,0.2175 -0.205411,0.2055 l -2.392435,0 0,2.4045 q 0,0.2175 -0.229577,0.2175 l -2.380353,0 0,2.4045 q 0,0.2175 -0.229577,0.2054 l -7.624377,0 q -0.217494,0 -0.205411,-0.2054 z m 2.827424,-2.622 5.002364,0 0,-2.4045 q 0.03625,-0.2175 0.229577,-0.2055 l 2.380353,0 0,-7.6243 -2.380353,0 q -0.229577,0 -0.229577,-0.2054 l 0,-2.4046 -5.002364,0 0,12.8443 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LCD Solid';-inkscape-font-specification:'LCD Solid';fill:#ffffff"
+         id="path4144"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 74.935948,1042.5084 0,-2.4045 q 0.03625,-0.2175 0.217494,-0.2054 l 2.404518,0 0,-12.8684 -2.404518,0 q -0.217494,0 -0.217494,-0.2175 l 0,-2.4045 q 0.03625,-0.2054 0.217494,-0.2054 l 7.63646,0 q 0.217494,0.036 0.217494,0.2054 l 0,2.4045 q 0,0.2175 -0.217494,0.2175 l -2.404519,0 0,12.8684 2.404519,0 q 0.217494,0.036 0.217494,0.2054 l 0,2.4045 q 0,0.2175 -0.217494,0.2175 l -7.63646,0 q -0.217494,0 -0.217494,-0.2175 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LCD Solid';-inkscape-font-specification:'LCD Solid';fill:#ffffff"
+         id="path4146"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 87.417691,1026.8005 0,-2.4045 q 0.03625,-0.2175 0.217494,-0.2175 l 12.880485,0 q 0.21749,0.036 0.21749,0.2175 l 0,2.4045 q 0,0.2175 -0.21749,0.2054 l -5.014448,0 0,15.5025 q 0,0.2175 -0.229577,0.2175 l -2.392435,0 q -0.229577,0 -0.229577,-0.2175 l 0,-15.5025 -5.014448,0 q -0.217494,0 -0.217494,-0.2054 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LCD Solid';-inkscape-font-specification:'LCD Solid';fill:#ffffff"
+         id="path4148"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 102.5577,1042.5326 0,-2.4045 q 0.0363,-0.2175 0.2175,-0.2175 l 10.24639,0 0,-5.0145 -7.62438,0 q -0.21749,0 -0.21749,-0.2175 l 0,-2.4045 -2.40452,0 q -0.2175,0 -0.2175,-0.2054 l 0,-5.0265 q 0.0363,-0.2175 0.2175,-0.2054 l 2.40452,0 0,-2.4046 q 0.0362,-0.2174 0.21749,-0.2174 l 10.24639,0 q 0.21749,0.036 0.21749,0.2174 l 0,2.4046 q 0,0.2175 -0.21749,0.2054 l -10.24639,0 0,5.0265 7.62438,0 q 0.21749,0.036 0.21749,0.2054 l 0,2.4045 2.40452,0 q 0.21749,0.036 0.21749,0.2175 l 0,5.0145 q 0,0.2175 -0.21749,0.2175 l -2.40452,0 0,2.4045 q 0,0.2175 -0.21749,0.2054 l -10.24639,0 q -0.2175,0 -0.2175,-0.2054 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'LCD Solid';-inkscape-font-specification:'LCD Solid';fill:#ffffff"
+         id="path4150"
+         inkscape:connector-curvature="0" />
+    </g>
   </g>
 </svg>
