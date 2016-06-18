@@ -3,10 +3,9 @@ self.addEventListener('install', function(event) {
     caches.open('v4').then(function(cache) {
       return cache.addAll([
         'index.html',
-        'img/*',
-        'fonts/*',
-        'style/*',
-        'snd/*',
+        'style/fonts.css',
+        'style/game.css',
+        'style/reset.css',
         'dist/all.js'
       ]);
     })
