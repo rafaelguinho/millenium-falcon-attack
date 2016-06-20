@@ -12,8 +12,6 @@ function Touch(elemento, context, startCallBack, endCallBack) {
 
     var touchStart = function (e) {
 
-        
-
         var posicao = converterParaCanvas(
             e.changedTouches[0].pageX - touch.canvas.offsetLeft,
             e.changedTouches[0].pageY - touch.canvas.offsetTop
