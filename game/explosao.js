@@ -1,5 +1,5 @@
 var SOM_EXPLOSAO = new Audio();
-SOM_EXPLOSAO.src = 'snd/explosao.mp3';
+SOM_EXPLOSAO.src = 'snd/explosion.wav';
 SOM_EXPLOSAO.volume = 0.4;
 SOM_EXPLOSAO.load();
 

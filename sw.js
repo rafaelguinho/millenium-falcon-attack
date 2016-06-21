@@ -30,7 +30,10 @@ self.addEventListener('install', function(event) {
         'snd/musica-acao.mp3',
         'snd/tiro.mp3',
         'dist/',
-        'dist/all.js'
+        'dist/all.js',
+        'launcher-icon-2x.png',
+        'launcher-icon-3x.png',
+        'launcher-icon-4x.png'
       ]);
     })
   );
