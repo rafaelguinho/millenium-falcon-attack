@@ -1,0 +1,27 @@
+{
+  "name": "starkiller",
+  "version": "1.0.0",
+  "description": "Jogo desenvolvido (por mim) em HTML5 e JavaScript S2.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  },
+  "devDependencies": {
+    "gulp-minify": "0.0.12",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelguinho/starkiller.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelguinho/starkiller/issues"
+  },
+  "homepage": "https://github.com/rafaelguinho/starkiller#readme"
+}

@@ -1,0 +1,12 @@
+@font-face{
+                font-family: 'Lcd-Solid';
+                src:url('../fonts/lcd_solid-webfont.otf');
+                src:url('../fonts/lcd_solid-webfont.eot?#iefix') format('embedded-opentype'),
+                    url('../fonts/lcd_solid-webfont.woff') format('woff'),
+                    url('../fonts/lcd_solid-webfont.ttf') format('truetype'),
+                    url('../fonts/lcd_solid-webfont.svg#codrops-social') format('svg');
+            }
+            @font-face{
+                font-family: 'Star-Jedi';
+                src:url('../fonts/Starjedi.ttf') format('truetype');
+            }
