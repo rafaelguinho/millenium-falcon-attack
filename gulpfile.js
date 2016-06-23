@@ -22,7 +22,7 @@ gulp.task('scripts', function() {
 "game/inicializador.js",
 
 ])
-    .pipe(concat('all.js'))
+    .pipe(concat('all.2.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/'));
 });

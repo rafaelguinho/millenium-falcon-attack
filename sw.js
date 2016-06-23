@@ -1,6 +1,6 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('v5').then(function(cache) {
+    caches.open('v6').then(function(cache) {
       return cache.addAll([
         'index.html',
         'style/fonts.css',
@@ -25,7 +25,7 @@ self.addEventListener('install', function(event) {
         'snd/explosao.mp3',
         'snd/musica-acao.mp3',
         'snd/tiro.mp3',
-        'dist/all.js',
+        'dist/all.2.js',
         'launcher-icon-2x.png',
         'launcher-icon-3x.png',
         'launcher-icon-4x.png',
