@@ -9,6 +9,10 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+ window.addEventListener('beforeinstallprompt', function(e) {
+        outputElement.textContent = 'beforeinstallprompt Event fired';
+      });
+
 var canvas = document.getElementById('canvas_animacao');
 
 canvas.width = window.innerWidth;
