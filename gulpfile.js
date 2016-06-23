@@ -22,7 +22,11 @@ gulp.task('scripts', function() {
 "game/inicializador.js",
 
 ])
+<<<<<<< HEAD
     .pipe(concat('all.js'))
+=======
+    .pipe(concat('all.2.js'))
+>>>>>>> gh-pages
     .pipe(uglify())
     .pipe(gulp.dest('dist/'));
 });
