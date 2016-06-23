@@ -93,5 +93,8 @@ Animacao.prototype={
         // Substituir os arrays velhos pelos novos
         this.sprites = novoSprites;
         this.processamentos = novoProcessamentos;
+
+        novoSprites = null;
+        novoProcessamentos = null;
     }
 }
