@@ -93,11 +93,8 @@ Animacao.prototype={
         // Substituir os arrays velhos pelos novos
         this.sprites = novoSprites;
         this.processamentos = novoProcessamentos;
-<<<<<<< HEAD
-=======
 
         novoSprites = null;
         novoProcessamentos = null;
->>>>>>> gh-pages
     }
 }

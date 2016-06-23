@@ -1,9 +1,7 @@
 if ('serviceWorker' in navigator) {
-<<<<<<< HEAD
-  navigator.serviceWorker.register('../sw.js', { scope: '' })
-=======
+
   navigator.serviceWorker.register('./sw.js', { scope: '' })
->>>>>>> gh-pages
+
   .then(function(reg) {
     console.log('Registration succeeded. Scope is ' + reg.scope);
   }).catch(function(error) {
@@ -12,13 +10,9 @@ if ('serviceWorker' in navigator) {
 }
 
 var canvas = document.getElementById('canvas_animacao');
-<<<<<<< HEAD
-canvas.width = screen.availWidth;
-canvas.height = screen.availHeight;
-=======
+
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
->>>>>>> gh-pages
 
 var context = canvas.getContext('2d');
 
@@ -130,7 +124,7 @@ function iniciarJogo() {
     criacaoInimigos.ultimoCriado = new Date().getTime();
     painel.pontuacao = 0;
 
-    musicaAcao.play();
+    //musicaAcao.play();
     animacao.ligar();
 
     ativarTiro(true);
