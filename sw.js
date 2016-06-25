@@ -1,7 +1,7 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
 
-    caches.open('v6').then(function(cache) {
+    caches.open('v7').then(function(cache) {
       return cache.addAll([
         'index.html',
         'style/fonts.css',

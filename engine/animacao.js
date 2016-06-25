@@ -94,7 +94,5 @@ Animacao.prototype={
         this.sprites = novoSprites;
         this.processamentos = novoProcessamentos;
 
-        novoSprites = null;
-        novoProcessamentos = null;
     }
 }

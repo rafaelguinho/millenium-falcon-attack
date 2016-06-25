@@ -20,24 +20,31 @@ function MilleniumFalcon(context, teclado, imagem, imagemExplosao, touch) {
 MilleniumFalcon.prototype = {
     atualizar: function () {
 
-        // var incremento = this.velocidade * this.animacao.decorrido / 1000;
-
-        // if (this.teclado.pressionada(SETA_ESQUERDA) && this.x > 0)
-        //     this.x -= incremento;
-
-        // if (this.teclado.pressionada(SETA_DIREITA) && this.x < this.context.canvas.width - this.imagem.width)
-        //     this.x += incremento;
-
-        // if (this.teclado.pressionada(SETA_ACIMA) && this.y > 0)
-        //     this.y -= incremento;
-
-        // if (this.teclado.pressionada(SETA_ABAIXO) && this.y < this.context.canvas.height - this.imagem.height)
-        //     this.y += incremento;
-
-        this.x = this.touch.posicaoX() - (this.imagem.width/2);
-        this.y = this.touch.posicaoY() - (this.imagem.height/2 + 50);
-
         this.chewbaccaAtirar();
+
+        if (!this.teclado.hasPressed()) {
+
+            this.x = this.touch.posicaoX() - (this.imagem.width / 2);
+            this.y = this.touch.posicaoY() - (this.imagem.height / 2 + 50);
+
+            return;
+        }
+        var incremento = this.velocidade * this.animacao.decorrido / 1000;
+
+        if (this.teclado.pressionada(SETA_ESQUERDA) && this.x > 0)
+            this.x -= incremento;
+
+        if (this.teclado.pressionada(SETA_DIREITA) && this.x < this.context.canvas.width - this.imagem.width)
+            this.x += incremento;
+
+        if (this.teclado.pressionada(SETA_ACIMA) && this.y > 0)
+            this.y -= incremento;
+
+        if (this.teclado.pressionada(SETA_ABAIXO) && this.y < this.context.canvas.height - this.imagem.height)
+            this.y += incremento;
+
+
+
 
     },
     chewbaccaAtirar: function () {

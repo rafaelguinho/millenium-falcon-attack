@@ -9,15 +9,28 @@ function Button(elemento, imgButton, x, y, callBack) {
 
     var touchStart = function (e) {
 
-        var rect = { x: touch.x, 
-            y: touch.y, 
-            width: touch.imgButton.width, 
-            height: touch.imgButton.height };
+        var x, y;
 
-        if (collides(rect, e.changedTouches[0].pageX, e.changedTouches[0].pageY)){
-                elemento.removeEventListener('touchstart', touchStart);
-                callBack();
-            } 
+        if (e.changedTouches) {
+            x = e.changedTouches[0].pageX;
+            y = e.changedTouches[0].pageY;
+        }else{
+            x = e.clientX;
+            y = e.clientY;
+        }
+
+        var rect = {
+            x: touch.x,
+            y: touch.y,
+            width: touch.imgButton.width,
+            height: touch.imgButton.height
+        };
+
+        if (collides(rect, x, y)) {
+            elemento.removeEventListener('touchstart', touchStart);
+            elemento.removeEventListener('click', touchStart);
+            callBack();
+        }
 
     }
 
@@ -37,8 +50,8 @@ function Button(elemento, imgButton, x, y, callBack) {
         return false;
     }
 
-
     elemento.addEventListener('touchstart', touchStart);
+    elemento.addEventListener('click', touchStart);
 }
 
 Button.prototype = {

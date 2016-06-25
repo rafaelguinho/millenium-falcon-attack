@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.5290672"
-     inkscape:cx="63.089128"
+     inkscape:cx="63.587201"
      inkscape:cy="28.468919"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -55,20 +55,20 @@
      id="layer1"
      transform="translate(0,-997.36216)">
     <rect
-       style="fill:#000000;stroke:none"
+       style="fill:#333333;stroke:none"
        id="rect3389"
        width="121.33949"
        height="45.071659"
        x="4.4851985"
        y="1002.2975" />
     <path
-       style="fill:#ffff00;stroke:none;stroke-width:1.36523783;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#000000;stroke:none;stroke-width:1.36523783;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 5.6244359,998.44876 0,2.36724 -2.65319,0 0,2.5108 -2.32623895,0 0,42.5906 2.32623895,0 0,2.991 2.65319,0 0,2.3672 119.0621841,0 0,-2.3672 2.32731,0 0,-2.991 2.34106,0 0,-42.5906 -2.34106,0 0,-2.5108 -2.32731,0 0,-2.36724 z m 2.6537158,4.89254 113.4288783,0 0,2.841 2.8095,0 0,37.3597 -2.8095,0 0,2.8411 -113.4288783,0 0,-2.8411 -2.7946661,0 0,-37.3597 2.7946661,0 z"
        id="rect3349"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccccccccccccccccccccccccccc" />
     <g
-       transform="matrix(0.99958334,0,0,0.95135266,0.64500695,40.495033)"
+       transform="matrix(0.99958334,0,0,0.95135266,0.64500695,41.611849)"
        style="font-style:normal;font-weight:normal;font-size:24.74599648px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text4146">
       <path

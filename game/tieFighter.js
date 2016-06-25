@@ -8,6 +8,8 @@ function TieFighter(context, imagem, imgExplosao) {
     this.velocidade = 0;
     this.imgExplosao = imgExplosao;
     this.stringUnica = 'tie'+this.x+this.y;
+    this.canvasWidth = context.canvas.width;
+    this.canvasHeight = context.canvas.height;
 }
 
 TieFighter.prototype = {
@@ -18,7 +20,7 @@ TieFighter.prototype = {
 
         this.x += this.direction;
         
-        if(this.y > this.context.canvas.height || this.x > this.context.canvas.width) {
+        if(this.y > this.canvasHeight || this.x > this.canvasWidth) {
             this.animacao.excluirSprite(this);
             this.colisor.excluirSprite(this);
         }

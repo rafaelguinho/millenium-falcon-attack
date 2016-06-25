@@ -7,6 +7,10 @@ function Asteroid(context, imagem, imgExplosao) {
     this.velocidade = 0;
     this.imgExplosao = imgExplosao;
     this.stringUnica = 'asteroid'+this.x+this.y;
+    
+    this.canvasWidth = context.canvas.width;
+    this.canvasHeight = context.canvas.height;
+    
 }
 
 Asteroid.prototype = {
@@ -15,7 +19,7 @@ Asteroid.prototype = {
         this.y +=
          this.velocidade * this.animacao.decorrido / 500;
         
-        if(this.y > this.context.canvas.height) {
+        if(this.y > this.canvasHeight) {
             this.animacao.excluirSprite(this);
             this.colisor.excluirSprite(this);
         }

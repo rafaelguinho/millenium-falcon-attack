@@ -1,17 +1,17 @@
 if ('serviceWorker' in navigator) {
 
-  navigator.serviceWorker.register('./sw.js', { scope: '' })
+    navigator.serviceWorker.register('./sw.js', { scope: '' })
 
-  .then(function(reg) {
-    console.log('Registration succeeded. Scope is ' + reg.scope);
-  }).catch(function(error) {
-    console.log('Registration failed with ' + error);
-  });
+        .then(function (reg) {
+            console.log('Registration succeeded. Scope is ' + reg.scope);
+        }).catch(function (error) {
+            console.log('Registration failed with ' + error);
+        });
 }
 
- window.addEventListener('beforeinstallprompt', function(e) {
-        outputElement.textContent = 'beforeinstallprompt Event fired';
-      });
+window.addEventListener('beforeinstallprompt', function (e) {
+    outputElement.textContent = 'beforeinstallprompt Event fired';
+});
 
 var canvas = document.getElementById('canvas_animacao');
 
@@ -19,6 +19,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var context = canvas.getContext('2d');
+context.font = "16px Lcd-Solid";
 
 var imagens, animacao, teclado, colisor, milleniumFalcon, criadorInimigos, painel, touch;
 var totalImagens = 0, carregadas = 0;
@@ -49,6 +50,7 @@ function carregarImagens() {
         imgButtonStart: 'start.svg',
         imgButtonCredits: 'credits.svg',
         logo: 'logo.svg',
+        I: 'I.jpg'
     };
 
     // Carregar todas
@@ -66,32 +68,38 @@ function carregando() {
 
     context.save();
 
-    context.drawImage(imagens.espaco, 0, 0, canvas.width, canvas.height);
+    context.fillStyle = "#000";
+    context.fillRect(0, 0, canvas.width, canvas.height);
 
     carregadas++;
     if (carregadas == totalImagens) {
 
-        var x = (canvas.width / 2 - 65), y= (canvas.height / 2 - 100);
+        var x = (canvas.width / 2 - 65), y = (canvas.height / 2 - 100);
         new Button(canvas, imagens.imgButtonStart, x, y, configureAndStartGame).draw();
 
-        y+=140;
+        y += 140;
         new Button(canvas, imagens.imgButtonCredits, x, y, showCredits).draw();
 
         x = (canvas.width / 2 - 80);
-        y= 40;
+        y = 50;
         context.drawImage(imagens.logo, x, y, imagens.logo.width, imagens.logo.height);
-        
     }
+
+    context.restore();
 }
+
+
+function showCredits() {
+    window.location.href = "credits.html";
+}
+
+
 
 function configureAndStartGame() {
     iniciarObjetos();
     iniciarJogo();
 }
 
-function showCredits(){
-    
-}
 
 function iniciarObjetos() {
 
@@ -281,7 +289,7 @@ function criacaoInimigos() {
             var agora = new Date().getTime();
             var decorrido = agora - this.ultimoCriado;
 
-            if (decorrido > 700) {
+            if (decorrido > 900) {
                 newEnemy();
                 this.ultimoCriado = agora;
             }
@@ -293,7 +301,7 @@ function criacaoInimigos() {
 function newEnemy() {
     var enemy = instanceEnemy();
 
-    enemy.velocidade = Math.floor(90 + Math.random() * (350 - 150 + 1));
+    enemy.velocidade = Math.floor(90 + Math.random() * (400 - 150 + 1));
 
     enemy.x = Math.floor(Math.random() * (canvas.width - enemy.imagem.width + 1));
 
