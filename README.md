@@ -6,7 +6,7 @@
 
 This is a progressive web app and it's ready to work off-line like an app.
 
-### instruction
+### Instructions
 
 If you is in a pc or notebook, use the directional pad to move the ship.
 In a smartphone you can use the touch to move it.
