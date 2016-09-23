@@ -4,10 +4,11 @@ function Button(elemento, imgButton, x, y, callBack) {
     this.x = x;
     this.y = y;
     this.context = elemento.getContext('2d');
+    this.elemento = elemento;
 
     var touch = this;
 
-    var touchStart = function (e) {
+    this.touchStart = function (e) {
 
         var x, y;
 
@@ -27,8 +28,7 @@ function Button(elemento, imgButton, x, y, callBack) {
         };
 
         if (collides(rect, x, y)) {
-            elemento.removeEventListener('touchstart', touchStart);
-            elemento.removeEventListener('click', touchStart);
+            touch.removeEvents();
             callBack();
         }
 
@@ -50,12 +50,16 @@ function Button(elemento, imgButton, x, y, callBack) {
         return false;
     }
 
-    elemento.addEventListener('touchstart', touchStart);
-    elemento.addEventListener('click', touchStart);
+    this.elemento.addEventListener('touchstart', this.touchStart);
+    this.elemento.addEventListener('click', this.touchStart);
 }
 
 Button.prototype = {
     draw: function () {
         this.context.drawImage(this.imgButton, this.x, this.y, this.imgButton.width, this.imgButton.height);
+    },
+    removeEvents: function(){
+        this.elemento.removeEventListener('touchstart', this.touchStart);
+        this.elemento.removeEventListener('click', this.touchStart);
     }
 }

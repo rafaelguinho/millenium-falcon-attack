@@ -28,6 +28,8 @@ var musicaAcao;
 carregarImagens();
 carregarMusicas();
 
+var menuButtons = [];
+
 var isGameOver = false;
 
 function carregarMusicas() {
@@ -75,10 +77,15 @@ function carregando() {
     if (carregadas == totalImagens) {
 
         var x = (canvas.width / 2 - 65), y = (canvas.height / 2 - 100);
-        new Button(canvas, imagens.imgButtonStart, x, y, configureAndStartGame).draw();
-
+        var btnStart = new Button(canvas, imagens.imgButtonStart, x, y, configureAndStartGame);
+        btnStart.draw();
+        
         y += 140;
-        new Button(canvas, imagens.imgButtonCredits, x, y, showCredits).draw();
+        var btnCredits = new Button(canvas, imagens.imgButtonCredits, x, y, showCredits);
+        btnCredits.draw();
+        
+        menuButtons.push(btnStart);
+        menuButtons.push(btnCredits);
 
         x = (canvas.width / 2 - 80);
         y = 50;
@@ -96,8 +103,15 @@ function showCredits() {
 
 
 function configureAndStartGame() {
+    removeEventsButton();
     iniciarObjetos();
     iniciarJogo();
+}
+
+function removeEventsButton(){
+    for(var i = 0, count = menuButtons.length; i< count; i++){
+        menuButtons[i].removeEvents();
+    }
 }
 
 

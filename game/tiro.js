@@ -1,5 +1,5 @@
 var SOM_TIRO = new Audio();
-SOM_TIRO.src = 'snd/laser.wav';
+SOM_TIRO.src = 'snd/tir.mp3';
 SOM_TIRO.volume = 0.1;
 SOM_TIRO.load();
 

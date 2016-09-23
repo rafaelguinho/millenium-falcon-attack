@@ -1,9 +1,10 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
 
-    caches.open('v8').then(function(cache) {
+    caches.open('v10').then(function(cache) {
       return cache.addAll([
         'index.html',
+        'credits.html',
         'style/fonts.css',
         'style/game.css',
         'style/reset.css',
@@ -23,10 +24,9 @@ self.addEventListener('install', function(event) {
         'img/sprite-nave.png',
         'img/start.svg',
         'img/tie.png',
-        'snd/explosao.mp3',
-        'snd/musica-acao.mp3',
-        'snd/tiro.mp3',
-        'dist/all.3.js',
+        'snd/explosion.mp3',
+        'snd/tir.mp3',
+        'dist/all.4.js',
         'launcher-icon-2x.png',
         'launcher-icon-3x.png',
         'launcher-icon-4x.png',
