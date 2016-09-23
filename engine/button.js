@@ -54,7 +54,7 @@ function Button(elemento, imgButton, x, y, callBack) {
     this.elemento.addEventListener('click', this.touchStart);
 }
 
-Button.prototype = {
+Button.prototype = { 
     draw: function () {
         this.context.drawImage(this.imgButton, this.x, this.y, this.imgButton.width, this.imgButton.height);
     },
