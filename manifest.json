@@ -18,8 +18,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/millenium-falcon-attack/",
+  "scope": "/millenium-falcon-attack/",
   "display": "fullscreen",
 "orientation": "portrait"
 }
