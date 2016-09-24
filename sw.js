@@ -31,7 +31,8 @@ self.addEventListener('install', function(event) {
         '/millenium-falcon-attack/launcher-icon-2x.png',
         '/millenium-falcon-attack/launcher-icon-3x.png',
         '/millenium-falcon-attack/launcher-icon-4x.png',
-        '/millenium-falcon-attack/favicon-16x16.png'
+        '/millenium-falcon-attack/favicon-16x16.png',
+        '/millenium-falcon-attack/img/I.jpg'
       ]);
     })
   );
