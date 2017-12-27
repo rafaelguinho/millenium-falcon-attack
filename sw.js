@@ -1,7 +1,7 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
 
-    caches.open('v12').then(function(cache) {
+    caches.open('v13').then(function(cache) {
       return cache.addAll([
         '/millenium-falcon-attack/',
         '/millenium-falcon-attack/index.html',
